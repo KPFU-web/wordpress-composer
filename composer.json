@@ -1,0 +1,30 @@
+{
+	"name": "kfu/wordpress-starter",
+	"description": "Install wordpress by composer",
+	"require": {
+		"composer/installers" : "~1.0",
+		"johnpbloch/wordpress": "^4.8",
+        "wpackagist-theme/rinzai":"*",
+        "wpackagist-plugin/wp-help" : "1.5.*",
+        "wpackagist-plugin/contact-form-7" : "*", 
+        "wpackagist-plugin/disable-comments" : "*",
+        "wpackagist-plugin/query-monitor" : "*"   
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://wpackagist.org"
+		}
+	],
+
+	"extra": {
+	    "installer-paths": {
+	      "content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+	      "content/plugins/{$name}/": ["type:wordpress-plugin"],
+	      "content/themes/{$name}/": ["type:wordpress-theme"]
+	    },
+	    "wordpress-install-dir": "core"
+	  }
+}
+
+
