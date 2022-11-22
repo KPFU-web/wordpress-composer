@@ -3,12 +3,14 @@
 	"description": "Install wordpress by composer",
 	"require": {
 		"composer/installers" : "~1.0",
-		"johnpbloch/wordpress": "^4.8",
-        "wpackagist-theme/rinzai":"*",
-        "wpackagist-plugin/wp-help" : "1.5.*",
-        "wpackagist-plugin/contact-form-7" : "*", 
-        "wpackagist-plugin/disable-comments" : "*",
-        "wpackagist-plugin/query-monitor" : "*"   
+		"johnpbloch/wordpress": "^6.1",
+        "wpackagist-theme/eksell":"*",
+        "wpackagist-plugin/cyr2lat" : "5.3.*",
+        "wpackagist-plugin/jsm-show-post-meta" : "*", 
+        "wpackagist-plugin/no-category-base-wpml" : "*",
+        "wpackagist-plugin/query-monitor" : "*",
+		"wpackagist-plugin/view-admin-as" : "*",
+		"wpackagist-plugin/turn-comments-off" : "*"
 	},
 	"repositories": [
 		{
